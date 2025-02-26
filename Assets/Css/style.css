@@ -1,0 +1,438 @@
+/* Header */
+.header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.header-main{
+    background: #000;
+    display: flex;
+    align-items: center; 
+    /* position: sticky;
+    z-index: 1000;
+    top: 0;
+    left: 0; */
+}
+
+.header-main .header-menu{
+    width: 100%;
+}
+
+.header-main .header-icon{
+    display: none;
+
+}
+
+.header-main .header-menu ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.header-main .header-menu ul .active{
+    background: #333333;
+}
+
+.header-main .header-menu ul .menu-item{
+    align-items: center;
+    padding: 20px;
+}
+
+.header-main .header-menu .menu-item a{
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.header-main .header-menu .menu-item a img{
+    width: 50px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.header-main .header-menu ul .menu-item:nth-child(1){
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header-main .header-menu ul .menu-item:nth-child(1):hover img{
+    transform: scale(1.1);
+}
+
+.header-main .header-menu ul .menu-item:hover{
+    background: #fff;
+}
+.header-main .header-menu ul .menu-item:hover a{
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    .header-main .header-menu{
+        width: 90%;
+    }
+    .header-main .header-icon{
+        width: 10%;
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        background: #333333;
+    }
+    .header-main .header-icon:hover{
+        background: #fff;
+        color: #000;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .header-main .header-menu .menu-item{
+        display: none;
+    }
+
+    .header-main .header-menu .menu-item.active{
+        display: block;
+    }
+}
+/* End Header */
+/* Box */
+.ad-box{
+    text-align: center;
+    /* border: 2px solid #a8a8a8; */
+    margin: 15px 0;
+}
+.small-box{
+    padding: 40px 40px;
+}
+.large-box{
+    padding: 60px 40px;
+}
+
+.ad{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease;
+}
+
+.ad:hover{
+    transform: scale(1.1);
+}
+
+.ad-1{
+    background-image: url('../Image/shoppe.jfif');
+}
+
+.ad-2{
+    background-image: url('../Image/tiki.webp');
+}
+
+.ad-3{
+    background-image: url('../Image/tiktok.jfif');
+}
+
+.ad-4{
+    background-image: url('../Image/fb.jpg');
+}
+
+.ad-5{
+    background-image: url('../Image/lazada.webp');
+}
+
+.ad-6{
+    background-image: url('../Image/ytb.jfif');
+}
+
+@media (max-width:600px) {
+    .large-box{
+        display: none;
+    }
+}
+/* End Box */
+/* Section */
+.inner-warp{
+    display: flex;
+}
+
+.inner-warp .navigator{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+/* .inner-warp .navigator  */
+.sticky-menu{
+    position: sticky;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.inner-warp .navigator .menu-top{
+    display: flex;
+}
+
+.inner-warp .navigator .menu-top h2{
+    padding: 8px 16px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.inner-warp .navigator .menu-top .menu-icon{
+    width: 0%;
+    display: none;
+}
+
+.inner-warp .navigator{
+    background: #f0f0f0;
+}
+
+.inner-warp .navigator .nav-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.inner-warp .navigator .nav-menu ul li{
+    padding: 8px 16px;
+}
+
+.inner-warp .navigator .nav-menu ul li a{
+    font-size: 18px;
+    color: #000;
+    width: 100%;
+}
+
+.inner-warp .navigator .nav-menu ul li:hover{
+    background: #000;
+}
+
+.inner-warp .navigator .nav-menu ul li:hover a{
+    color: #fff;
+}
+
+.inner-warp .inner-content{
+    width: calc(100% - 250px);
+}
+
+.inner-warp .inner-content .article{
+    display: flex;
+    padding: 20px 10px;
+}
+
+#article1, #article2, #article3{
+    scroll-margin-top: 60px;
+}
+
+.inner-warp .inner-content .article .article-content{
+    width: 70%;
+    padding: 0 10px;
+}
+
+.inner-warp .inner-content .article .article-content p{
+    width: 80%;
+}
+
+.inner-warp .inner-content .article .article-content h2{
+    color: #009688;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.inner-warp .inner-content .article .article-content .info{
+    display: flex;
+}
+
+.inner-warp .inner-content .article .article-content .info1, .inner-warp .inner-content .article .article-content .info2{
+    width: 50%;;
+}
+
+.inner-warp .inner-content .article .article-img, .inner-warp .inner-content .article .article-img2{
+    width: 30%;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.inner-warp .inner-content .article .article-img img{
+    width: 50%;
+    height: auto;
+}
+
+.inner-warp .inner-content .article .article-img2 img{
+    width: 100%;
+    height: auto;
+}
+
+.inner-warp .inner-content .article .article-ad{
+    width: 30%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.inner-warp .page-bar{
+    margin: 0 auto;
+}
+
+.inner-warp .page-bar ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.inner-warp .page-bar ul li{
+    padding: 8px 16px;
+    margin-right: 5px;
+}
+
+.inner-warp .page-bar ul li:hover{
+    background: #000;
+}
+
+.inner-warp .page-bar ul .active{
+    background: #333333;
+    color: #fff;
+}
+
+.inner-warp .page-bar ul .active a{
+    color: #fff;
+}
+
+.inner-warp .page-bar ul li:hover a{
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .inner-warp .navigator{
+        /* display: none; */
+        position: fixed;
+        height: 100vh;
+        z-index: 999;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        transition: left 0.3s ease;
+    }
+    .inner-warp .inner-content{
+        width: 100%;
+    }
+
+    .inner-warp .navigator.open{
+        /* display: block; */
+        left: 0;
+    }
+    .inner-warp .navigator .menu-top h2{
+        padding: 8px 16px;
+        margin: 8px 0;
+        width: 70%;
+    }
+    
+    .inner-warp .navigator .menu-top .menu-icon{
+        width: 30%;
+        display: block;
+        font-size: 20px;
+        font-weight: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner-warp .navigator .menu-top .menu-icon:hover{
+        background: #000;
+        color: #fff;
+    }
+}
+
+@media (max-width: 600px){
+    .inner-warp .inner-content .article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inner-warp .inner-content .article .article-content{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .inner-warp .inner-content .article .article-content p{
+        width: 100%;
+    }
+    .inner-warp .inner-content .article .article-ad{
+        z-index: 1;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .inner-warp .inner-content .article .article-ad .ad-box{
+        aspect-ratio: 3/1;
+    }
+    .inner-warp .inner-content .article .article-img, .inner-warp .inner-content .article .article-img2{
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #666666;
+}
+
+.footer .footer-1 h2{
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.footer .footer-1 ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer .footer-1 ul li{
+    padding: 8px 16px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.footer .footer-1 ul li a{
+    color: #666666;
+    font-size: 20px;
+}
+
+.footer .footer-2{
+    background: #333333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* End Footer */
+/* End Section */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền nửa trong suốt */
+    z-index: 998; /* Đặt lớp phủ dưới navigator */
+    display: none; /* Ẩn lớp phủ khi navigator chưa mở */
+}
+
+.overlay.show {
+    display: block; /* Hiện lớp phủ khi navigator mở */
+}
